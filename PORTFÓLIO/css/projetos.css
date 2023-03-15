@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Montserrat:wght@200&family=Open+Sans&family=Source+Code+Pro&family=Tenor+Sans&display=swap');
+
+body{
+    background-color: #18072b;
+}
+
+.projetos{
+    background-color: #18072b;
+    padding: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+.projetos .ptitulo h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 300%;
+    letter-spacing: 5px;
+}
+
+.projetos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.projetos .galeria .projeto{
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.833);
+    width: 30%;
+    margin-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.projetos .galeria .projeto:hover{
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+}
+
+.projetos .galeria .projeto img{
+    width: 60%;
+}
+
+
+
+
+@media screen and (max-width:750px) {
+    .projetos{
+        align-items: center;
+    }
+    .projetos .galeria{
+       display: block;
+       
+
+    }
+
+    .projetos .galeria .projeto{
+        width: 70%;
+        margin-left: 0px;
+        margin: 80px;
+        margin-top: 0;
+    }
+}

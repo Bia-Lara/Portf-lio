@@ -1,0 +1,517 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    transition: .5s;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+ 
+ 
+ #Sobre{
+     padding: 15px;
+     display: flex;
+     background-color: #18072b;
+     width: 100%;
+     padding-bottom: 80px;   
+     
+ }
+ 
+ .foto{
+     width: 50%;
+     padding-top: 10%;
+    
+ }
+ 
+ .foto .circulo{
+     width: 500px;
+     height: 500px;
+     border: 10px solid rgba(255, 255, 255, 0);
+     border-radius: 50%;
+     border-image: linear-gradient(to right,#4395ff, #5b0a9d, #100124 )1;
+     position: absolute;
+     animation: is-rotating 2s infinite;
+ }
+ 
+ 
+ 
+ .foto .c2{
+     width: 450px;
+     height: 450px;
+     margin: 25px;
+     animation: is-rotating2 2s infinite;
+ }
+ 
+ .foto .c3{
+     width: 400px;
+     height: 400px;
+     margin: 55px;
+ }
+ 
+ @keyframes is-rotating{
+     to{
+         transform: rotate(1turn);
+     }
+ 
+ }
+ 
+ @keyframes is-rotating2{
+     to{
+         transform: rotate(-1turn);
+     }
+ 
+ }
+ 
+ .foto #fotoeu{
+     width: 350px;
+     position: relative;
+     margin: 85px;
+     
+     
+ }
+ 
+ .sobremim{
+     width: 50%;
+     margin-left: 100px ;
+     padding-top: 10%;
+ }
+ 
+ 
+ .sobremim .titulo{
+   width: 100%;
+ }
+ 
+ .sobremim .titulo h1{
+     text-align: center;
+     padding: 15px;
+     margin-bottom: 50px;
+     font-size:400%;
+     font-family: 'Kollektif', sans-serif;
+     border: 10px solid white;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     border-image: linear-gradient(to right,#4395ff, #5b0a9d, #100124 )1;
+ }
+ 
+ .sobremim .texto{
+     text-align: center;
+     padding-bottom:100px ;
+ }
+ 
+ .sobremim .texto p{
+     text-align: center;
+     font-family:'Source Code Pro', monospace;
+     font-size: 20px;
+     line-height: 30px;
+ }
+ 
+ .sobremim .botoes{
+     display: flex;
+ }
+ 
+ .sobremim .botoes a{
+     padding-left: 12%;
+     text-decoration: none;
+     cursor: pointer;
+    
+ }
+ 
+ .sobremim .botoes a button{
+     display: flex;
+     align-items: center;
+     width: 200px;
+     height: 50px;
+     border-radius: 30px;
+     border: none;
+     background-image: linear-gradient(to right,#4395ff 20%, #5b0a9d, #2b035f);
+     cursor: pointer;
+     font-family: 'Kollektif', sans-serif;
+     font-size: 20px;
+     transition: .5s;
+ }
+ 
+ .sobremim .botoes a button:hover{
+     transform: scale(1.1);
+     transition: all 0.5s;
+ }
+ 
+ .sobremim .botoes a button:hover ~ .sobremim .botoes a button img{
+     transform: translateX(20px)
+ }
+ 
+ .sobremim .botoes a button span{
+     color: black;
+     padding-top: 15px;
+     padding-left: 30px;
+ }
+ 
+ 
+ @media screen and (max-width:1364px) {
+     .foto{
+         width: 40%;
+     }
+ }
+ 
+ 
+ @media screen and (max-width:1331px) {
+    .foto .circulo{
+     width: 400px;
+     height: 400px;
+    }
+ 
+    .foto .c2{
+     width: 350px;
+     height: 350px;
+    }
+ 
+    .foto .c3{
+     width: 300px;
+     height: 300px;
+    }
+ 
+    .foto #fotoeu{
+     width: 250px;
+    }
+ 
+    .sobremim .titulo{
+     width: 100%;
+    }
+ 
+    .sobremim .titulo h1{
+     font-size:300%;
+     padding: 5px;
+     margin-bottom: 30px;
+    }
+ 
+    .sobremim .texto{
+     padding-bottom: 60px;
+    }
+ 
+    .sobremim .texto p{
+     font-size: 16px;
+ 
+    }
+ 
+    .sobremim .botoes a{
+     padding-left: 9%;
+    }
+ 
+ 
+ }
+ 
+ @media screen and (max-width:1094px){
+     .sobremim .botoes a{
+         padding-left: 7%;
+        }
+ }
+ 
+ @media screen and (max-width:1080px){
+     .foto .circulo{
+         width: 350px;
+         height: 350px;
+        }
+     
+        .foto .c2{
+         width: 300px;
+         height: 300px;
+        }
+     
+        .foto .c3{
+         width: 250px;
+         height: 250px;
+        }
+     
+        .foto #fotoeu{
+         width: 200px;
+        }
+     
+        .sobremim .titulo{
+         width: 100%;
+        }
+     
+        .sobremim .titulo h1{
+         font-size:250%;
+         padding: 5px;
+         margin-bottom: 30px;
+        }
+     
+        .sobremim .texto{
+         padding-bottom: 60px;
+        }
+     
+        .sobremim .texto p{
+         font-size: 15px;
+     
+        }
+     
+        .sobremim .botoes a{
+         padding-left: 7%;
+        }
+ 
+        .sobremim .botoes a button{
+         width: 180px;
+         height: 40px;
+        }
+     
+     
+ }
+ 
+ @media screen and (max-width:951px){
+        .sobremim .titulo{
+         width: 100%;
+        }
+     
+        .sobremim .titulo h1{
+         font-size:200%;
+         padding: 5px;
+         margin-bottom: 30px;
+        }
+     
+        .sobremim .texto{
+         padding-bottom: 60px;
+        }
+     
+        .sobremim .texto p{
+         font-size: 80%;
+     
+        }
+     
+        .sobremim .botoes a{
+         padding-left: 7%;
+        }
+ 
+        .sobremim .botoes a button{
+         width: 150px;
+         height: 40px;
+         font-size: 16px;
+        }
+ 
+        .sobremim .botoes a button span{
+         padding: 10px;
+        }
+     
+ }
+ 
+ @media screen and (max-width:900px){
+     #Sobre{
+         display: block;
+         
+     }
+ 
+     .foto{
+         width: 50%;
+         position: relative;
+         margin: 0;
+         align-items: center;
+         margin: 15%;
+     }
+ 
+     .foto .circulo{
+         width: 450px;
+         height: 450px;
+        }
+     
+        .foto .c2{
+         width: 400px;
+         height: 400px;
+        }
+     
+        .foto .c3{
+         width: 350px;
+         height: 350px;
+        }
+     
+        .foto #fotoeu{
+         width: 300px;
+        }
+ 
+        .sobremim{
+         text-align: center;
+         width: 100%;
+         margin: 0;
+         padding-top: 2%;
+        }
+ 
+        .sobremim .titulo{
+         text-align: center;
+        }
+     
+        .sobremim .titulo h1{
+         font-size:400%;
+         padding: 5px;
+         margin-bottom: 30px;
+         position: absolute;
+         top: 80px;
+         margin: 15%;
+         margin-top: 0;
+        }
+     
+        .sobremim .texto{
+         padding-bottom: 60px;
+         text-align: center;
+        }
+     
+        .sobremim .texto p{
+         font-size: 25px;
+     
+        }
+        .sobremim .botoes a button{
+         width: 200px;
+         height: 50px;
+        }
+ 
+        .sobremim .botoes a button{
+         font-size: 20px
+        }
+ }
+ 
+ @media screen and (max-width:680px){
+     #Sobre{
+         display: block;
+         
+     }
+ 
+     .foto{
+         width: 30%;
+         position: relative;
+         margin: 0;
+         align-items: center;
+         margin: 12%;
+         margin-top: 150px;
+     }
+ 
+     .foto .circulo{
+         width: 375px;
+         height: 375px;
+        }
+     
+        .foto .c2{
+         width: 325px;
+         height: 325px;
+        }
+     
+        .foto .c3{
+         width: 275px;
+         height: 275px;
+        }
+     
+        .foto #fotoeu{
+         width: 225px;
+        }
+ 
+        .sobremim{
+         text-align: center;
+         width: 100%;
+         margin: 0;
+         padding-top: 2%;
+        }
+ 
+        .sobremim .titulo{
+         text-align: center;
+        }
+     
+        .sobremim .titulo h1{
+         font-size:300%;
+         padding: 5px;
+         margin-bottom: 30px;
+         position: absolute;
+         top: 80px;
+         margin: 15%;
+         margin-top: 0;
+        }
+     
+        .sobremim .texto{
+         padding-bottom: 60px;
+         text-align: center;
+        }
+     
+        .sobremim .texto p{
+         font-size: 25px;
+     
+        }
+        .sobremim .botoes a button{
+         width: 200px;
+         height: 50px;
+        }
+ 
+        .sobremim .botoes a button{
+         font-size: 20px
+        }
+ }
+
+
+
+ #contato{
+    background-image: url('img/fundo.png');
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+
+ }
+
+
+ #contato img{
+    width: 99.999%;
+  
+ }
+
+ #contato .imagem{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+ }
+
+ #contato .imagem img{
+    width: 150px;
+ }
+
+ #contato .imagem .email{
+    padding-top: 50px;
+    color: black;
+ }
+
+ #contato .imagem .email a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .5s;
+ }
+
+ #contato .imagem .email a:hover{
+    color: #6e0fdb;
+ }
+
+ #contato .imagem .email a i{
+    color: black;
+ }
+
+ #contato span{
+    font-family: 'Lato', sans-serif;
+    color: rgba(0, 0, 0, 0.656);
+    font-size: 25px;
+ }
+
+ #contato .sociais{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+ }
+
+ #contato .sociais img{
+    width: 50%;
+    margin-left: 40px;
+    transition: .5s;
+ }
+
+ #contato .sociais img:hover{
+    transform: translateY(-10px)
+ }

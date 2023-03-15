@@ -1,0 +1,64 @@
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 14px;
+    position: fixed;
+    
+}
+
+.rodape{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+footer .autoria span{
+    color: black;
+    font-family: 'Kollektif', sans-serif;
+}
+
+
+footer .redes ul{
+    list-style: none;
+
+}
+
+footer .redes ul li{
+    position: relative;
+    margin-left: 50px;
+    float: left;
+    
+}
+
+footer .redes li img{
+   width:30px;
+   
+}
+
+@media screen and (max-width:951px){
+    footer .rodape{
+        display: block;
+        text-align: center;
+     }
+ 
+     footer .rodape .redes{
+         margin-top: 10px;
+         
+     }
+ 
+     footer .rodape .redes ul{
+        text-align: center;
+     }
+ 
+     footer .rodape .redes ul li{
+         text-align: center;
+         margin-left: 50px;
+     }
+}
+
